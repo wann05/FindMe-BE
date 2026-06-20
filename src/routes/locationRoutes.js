@@ -7,10 +7,8 @@ const {
     getLocations
 } = require("../controllers/locationController");
 
-router.post("/location", saveLocation);
-
-router.get("/latest-location", getLatestLocation);
-
-router.get("/locations", getLocations);
+router.post("/api/location", saveLocation);
+router.get("/api/latest-location", getLatestLocation);
+router.get("/api/locations", getLocations);
 
 module.exports = router;
